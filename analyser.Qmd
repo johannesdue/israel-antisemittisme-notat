@@ -38,7 +38,7 @@ bibliography: refs/mylibrary.bib
 
 Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Formålet med dette lille notatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen, med åpne data og tilgjengelig kildekode for å reprodusere analysene.
 
-I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) [@hoffmannAttitudesJewsMuslims2017; @moeAttitudesJewsMuslims2023]. Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.
+I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) [@Hoffmann2024Attitudes; @Moe2024Attitudes]. Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.
 
 Dataene som brukes i disse analysene er tilgjengelige via Sikt:
 
