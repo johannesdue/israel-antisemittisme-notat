@@ -1,0 +1,7 @@
+# Data files - not for public distribution
+*.sav
+data/
+
+# R temporary files
+.Rhistory
+.RData
