@@ -1,6 +1,13 @@
-# Data files - not for public distribution
+# Data files
 *.sav
 data/
+
+# Quarto output files not for web
+*_files/figure-pdf/
+*.pdf
+
+# Quarto cache
+.quarto/
 
 # R temporary files
 .Rhistory
