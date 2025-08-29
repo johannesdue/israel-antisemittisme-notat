@@ -1,6 +1,6 @@
 ---
-title: "Hvordan henger Israel-fiendtlige og jødefiendtlige holdninger sammen?"
-subtitle: "Analyser av data fra HL-senterets holdningsundersøkelser fra 2017 og 2022"
+title: "Henger Israel-fiendtlige og jødefiendtlige holdninger sammen?"
+subtitle: "Et analysenotat basert på data fra HL-senterets holdningsundersøkelser fra 2017 og 2022"
 author:
   - name: "Johannes Due Enstad"
     affiliation: 
@@ -36,11 +36,11 @@ bibliography: refs/mylibrary.bib
 
 # Innledning
 
-Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Formålet med dette lille notatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen, med åpne data og tilgjengelig kildekode for å reprodusere analysene.
+Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Ettersom jeg har ledet et [forskningsprosjekt](https://johannesdue.github.io/chaceweb/) om antisemittisme i Europa, har jeg noe å si om temaet. Jeg har skrevet om saken blant annet [her](https://www.vg.no/nyheter/i/3E8xrP/den-nye-antisemittismen), [her](https://johannesdue.github.io/chaceweb/assets/enstad_kk_20240507.pdf) og [her](https://samfunnsforskning.brage.unit.no/samfunnsforskning-xmlui/bitstream/handle/11250/3176040/enstad_det_eldste_hatet_Agora_1-2_2024_.pdf?sequence=4&isAllowed=y). Formålet med dette lille analysenotatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen.
 
-I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) [@Hoffmann2024Attitudes; @Moe2024Attitudes]. Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.
+I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) [@Hoffmann2024Attitudes; @Moe2024Attitudes]. (HL-senteret gjennomførte en ny undersøkelse i 2024, men disse dataene er i skrivende stund ikke tilgjengeliggjort.) Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.
 
-Dataene som brukes i disse analysene er tilgjengelige via Sikt:
+Datagrunnlaget for analysene er tilgjengelig via Sikt:
 
 - 2017-data: <https://doi.org/10.18712/NSD-NSD2879-V3>
 - 2022-data: <https://doi.org/10.18712/NSD-NSD3151-V1>
@@ -119,7 +119,7 @@ df2 <- cbind(df2, prejudice_items_2022)
 
 Begge påstandene har fem svaralternativer: "Stemmer ikke i det hele tatt", "Stemmer nokså dårlig", "Stemmer nokså godt", "Stemmer helt", eller "Umulig å svare".
 
-**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som over. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.
+**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.
 
 Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.
 
@@ -240,7 +240,7 @@ Figurene viser et tydelig og gjennomgående mønster: jo mer enig respondentene 
 
 ## Effektstørrelser
 
-Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer *forårsaker* Israel-fiendtlighet eller vice versa. Det er likevel nyttig å beregne styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?
+Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer *forårsaker* Israel-fiendtlighet eller vice versa. Det er likevel nyttig å vurdere styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?
 
 ```{r resultater}
 #| label: tbl-2
@@ -350,7 +350,7 @@ Regresjonskoeffisientene (b) varierer fra 0.46 til 0.56, som betyr at det å væ
 
 ### Cohen's *d*
 
-Cohen's *d* ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at *d* = 0.65 regnes som en "stor" effekt i sosialpsykologi [@lovakovEmpiricallyDerivedGuidelines2021], kan vi slutte at dette er sterke sammenhenger.
+Cohen's *d* ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at *d* = 0.65 regnes som en "stor" effekt i sosialpsykologi [@lovakovEmpiricallyDerivedGuidelines2021], er det rimelig å beskrive de observerte sammenhengene som sterke.
 
 # Diskusjon
 
@@ -358,7 +358,9 @@ Resultatene tyder på en sterk og konsistent forbindelse mellom Israel-fiendtlig
 
 Dette betyr ikke at de som er kritiske til eller fiendtlige mot Israel, nødvendigvis har antisemittiske holdninger, men at det er betydelig større sannsynlighet for å finne antisemittiske holdninger hos Israel-fiendtlige personer.
 
-Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå begge veier. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.
+Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå i begge retninger. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.
+
+En rekke eksisterende forskningsstudier har funnet liknende sammenhenger mellom Israel-fiendtlighet og antisemittisme med data fra andre land, også etter å ha kontrollert for andre relevante faktorer [@cohenModernAntiSemitismAntiIsraeli2009; @cohen-abadyModernAntisemitismIsrael2016; @enstadFacingAntisemitismEurope2024; @hirshContemporaryLeftAntisemitism2018; @staetskyLeftRightChristians2020]. I en nylig publisert studie basert på data fra 12 EU-land, fant jeg at utbredelsen av negative syn på Israel var sterkt forbundet med jøders utsatthet for antisemittisk vold og trakassering---mens utbredelsen av eksplisitte antisemittiske fordommer *ikke* hadde noen slik effekt. Dette kan etter mitt syn tyde på at antisemittisk fiendtlighet er mer utbredt i befolkningen enn det man kan måle ved hjelp av tradisjonelle antijødiske påstander, og at sterk antipati mot Israel, som er mer sosialt akseptabelt, i mange tilfeller (men ikke alltid eller for alle) fungerer som et mer eller mindre subtilt uttrykk for underliggende antijødisk sentiment. I en annen studie, som i skrivende stund er under fagfellevurdering (se [preprint](https://osf.io/preprints/psyarxiv/8ursn_v1)), finner jeg, basert på HL-senterets egne data, en sterk sammenheng mellom Israel-fiendtlige holdninger og rettferdiggjøring av vold og trakassering mot jøder.
 
 Kommentarer eller spørsmål knyttet til disse analysene er velkomne, og jeg kan nås på <j.d.enstad@samfunnsforskning.no>.
 

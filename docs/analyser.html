@@ -8,7 +8,7 @@
 
 <meta name="author" content="Johannes Due Enstad">
 
-<title>Hvordan henger Israel-fiendtlige og jødefiendtlige holdninger sammen? – Israel-fiendtlighet og antisemittisme: et analysenotat</title>
+<title>Henger Israel-fiendtlige og jødefiendtlige holdninger sammen? – Israel-fiendtlighet og antisemittisme: et analysenotat</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -162,8 +162,8 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Hvordan henger Israel-fiendtlige og jødefiendtlige holdninger sammen?</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Kode</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Vis all kode</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Skjul all kode</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Vis kilde</a></li></ul></div></div>
-<p class="subtitle lead">Analyser av data fra HL-senterets holdningsundersøkelser fra 2017 og 2022</p>
+<div class="quarto-title-block"><div><h1 class="title">Henger Israel-fiendtlige og jødefiendtlige holdninger sammen?</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Kode</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Vis all kode</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Skjul all kode</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">Vis kilde</a></li></ul></div></div>
+<p class="subtitle lead">Et analysenotat basert på data fra HL-senterets holdningsundersøkelser fra 2017 og 2022</p>
 </div>
 
 
@@ -187,7 +187,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Utgitt</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">28. august 2025</p>
+      <p class="date">29. august 2025</p>
     </div>
   </div>
   
@@ -201,9 +201,9 @@ div.csl-indent {
 
 <section id="innledning" class="level1">
 <h1>Innledning</h1>
-<p>Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Formålet med dette lille notatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen, med åpne data og tilgjengelig kildekode for å reprodusere analysene.</p>
-<p>I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) <span class="citation" data-cites="hoffmannAttitudesJewsMuslims2017 moeAttitudesJewsMuslims2023">(<a href="#ref-hoffmannAttitudesJewsMuslims2017" role="doc-biblioref">Hoffmann og Moe 2017</a>; <a href="#ref-moeAttitudesJewsMuslims2023" role="doc-biblioref">Moe 2023</a>)</span>. Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.</p>
-<p>Dataene som brukes i disse analysene er tilgjengelige via Sikt:</p>
+<p>Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Ettersom jeg har ledet et <a href="https://johannesdue.github.io/chaceweb/">forskningsprosjekt</a> om antisemittisme i Europa, har jeg noe å si om temaet. Jeg har skrevet om saken blant annet <a href="https://www.vg.no/nyheter/i/3E8xrP/den-nye-antisemittismen">her</a>, <a href="https://johannesdue.github.io/chaceweb/assets/enstad_kk_20240507.pdf">her</a> og <a href="https://samfunnsforskning.brage.unit.no/samfunnsforskning-xmlui/bitstream/handle/11250/3176040/enstad_det_eldste_hatet_Agora_1-2_2024_.pdf?sequence=4&amp;isAllowed=y">her</a>. Formålet med dette lille analysenotatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen.</p>
+<p>I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) <span class="citation" data-cites="Hoffmann2024Attitudes Moe2024Attitudes">(<a href="#ref-Hoffmann2024Attitudes" role="doc-biblioref">Hoffmann 2024</a>; <a href="#ref-Moe2024Attitudes" role="doc-biblioref">Moe mfl. 2024</a>)</span>. (HL-senteret gjennomførte en ny undersøkelse i 2024, men disse dataene er i skrivende stund ikke tilgjengeliggjort.) Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.</p>
+<p>Datagrunnlaget for analysene er tilgjengelig via Sikt:</p>
 <ul>
 <li>2017-data: <a href="https://doi.org/10.18712/NSD-NSD2879-V3" class="uri">https://doi.org/10.18712/NSD-NSD2879-V3</a></li>
 <li>2022-data: <a href="https://doi.org/10.18712/NSD-NSD3151-V1" class="uri">https://doi.org/10.18712/NSD-NSD3151-V1</a></li>
@@ -280,7 +280,7 @@ div.csl-indent {
 <li>“Så lenge staten Israel finnes, kan det ikke bli fred.”</li>
 </ol>
 <p>Begge påstandene har fem svaralternativer: “Stemmer ikke i det hele tatt”, “Stemmer nokså dårlig”, “Stemmer nokså godt”, “Stemmer helt”, eller “Umulig å svare”.</p>
-<p><strong>Antisemittiske fordommer:</strong> Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: “Jøder har selv mye av skylden for at de er blitt forfulgt”). Svaralternativene er som over. For å konstruere skalaen, blir “Umulig å svare” sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</p>
+<p><strong>Antisemittiske fordommer:</strong> Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: “Jøder har selv mye av skylden for at de er blitt forfulgt”). Svaralternativene er som ovenfor. For å konstruere skalaen, blir “Umulig å svare” sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</p>
 <p>Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.</p>
 <div class="cell">
 <details class="code-fold">
@@ -708,7 +708,7 @@ Figur&nbsp;2: Fordeling av skåre på antisemittismeskalaen etter nivå på Isra
 </section>
 <section id="effektstørrelser" class="level2">
 <h2 class="anchored" data-anchor-id="effektstørrelser">Effektstørrelser</h2>
-<p>Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer <em>forårsaker</em> Israel-fiendtlighet eller vice versa. Det er likevel nyttig å beregne styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?</p>
+<p>Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer <em>forårsaker</em> Israel-fiendtlighet eller vice versa. Det er likevel nyttig å vurdere styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Kode</summary>
@@ -873,7 +873,7 @@ Tabell&nbsp;2: Styrken på sammenhengen mellom antisemittiske fordommer og Israe
 </section>
 <section id="cohens-d" class="level3">
 <h3 class="anchored" data-anchor-id="cohens-d">Cohen’s <em>d</em></h3>
-<p>Cohen’s <em>d</em> ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at <em>d</em> = 0.65 regnes som en “stor” effekt i sosialpsykologi <span class="citation" data-cites="lovakovEmpiricallyDerivedGuidelines2021">(<a href="#ref-lovakovEmpiricallyDerivedGuidelines2021" role="doc-biblioref">Lovakov og Agadullina 2021</a>)</span>, kan vi slutte at dette er sterke sammenhenger.</p>
+<p>Cohen’s <em>d</em> ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at <em>d</em> = 0.65 regnes som en “stor” effekt i sosialpsykologi <span class="citation" data-cites="lovakovEmpiricallyDerivedGuidelines2021">(<a href="#ref-lovakovEmpiricallyDerivedGuidelines2021" role="doc-biblioref">Lovakov og Agadullina 2021</a>)</span>, er det rimelig å beskrive de observerte sammenhengene som sterke.</p>
 </section>
 </section>
 </section>
@@ -881,10 +881,11 @@ Tabell&nbsp;2: Styrken på sammenhengen mellom antisemittiske fordommer og Israe
 <h1>Diskusjon</h1>
 <p>Resultatene tyder på en sterk og konsistent forbindelse mellom Israel-fiendtlige holdninger og antisemittiske fordommer i den norske befolkningen: jo mer enig folk er i Israel-fiendtlige påstander, jo høyere skårer de på antisemittismeskalaen. Mønstrene er gjennomgående på tvers av de to undersøkelsene fra 2017 og 2022.</p>
 <p>Dette betyr ikke at de som er kritiske til eller fiendtlige mot Israel, nødvendigvis har antisemittiske holdninger, men at det er betydelig større sannsynlighet for å finne antisemittiske holdninger hos Israel-fiendtlige personer.</p>
-<p>Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå begge veier. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.</p>
+<p>Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå i begge retninger. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.</p>
+<p>En rekke eksisterende forskningsstudier har funnet liknende sammenhenger mellom Israel-fiendtlighet og antisemittisme med data fra andre land, også etter å ha kontrollert for andre relevante faktorer <span class="citation" data-cites="cohenModernAntiSemitismAntiIsraeli2009 cohen-abadyModernAntisemitismIsrael2016 enstadFacingAntisemitismEurope2024 hirshContemporaryLeftAntisemitism2018 staetskyLeftRightChristians2020">(<a href="#ref-cohenModernAntiSemitismAntiIsraeli2009" role="doc-biblioref">Cohen mfl. 2009</a>; <a href="#ref-cohen-abadyModernAntisemitismIsrael2016" role="doc-biblioref">Cohen-Abady mfl. 2016</a>; <a href="#ref-enstadFacingAntisemitismEurope2024" role="doc-biblioref">Enstad 2024</a>; <a href="#ref-hirshContemporaryLeftAntisemitism2018" role="doc-biblioref">Hirsh 2018</a>; <a href="#ref-staetskyLeftRightChristians2020" role="doc-biblioref">Staetsky 2020</a>)</span>. I en nylig publisert studie basert på data fra 12 EU-land, fant jeg at utbredelsen av negative syn på Israel var sterkt forbundet med jøders utsatthet for antisemittisk vold og trakassering—mens utbredelsen av eksplisitte antisemittiske fordommer <em>ikke</em> hadde noen slik effekt. Dette kan etter mitt syn tyde på at antisemittisk fiendtlighet er mer utbredt i befolkningen enn det man kan måle ved hjelp av tradisjonelle antijødiske påstander, og at sterk antipati mot Israel, som er mer sosialt akseptabelt, i mange tilfeller (men ikke alltid eller for alle) fungerer som et mer eller mindre subtilt uttrykk for underliggende antijødisk sentiment. I en annen studie, som i skrivende stund er under fagfellevurdering (se <a href="https://osf.io/preprints/psyarxiv/8ursn_v1">preprint</a>), finner jeg, basert på HL-senterets egne data, en sterk sammenheng mellom Israel-fiendtlige holdninger og rettferdiggjøring av vold og trakassering mot jøder.</p>
 <p>Kommentarer eller spørsmål knyttet til disse analysene er velkomne, og jeg kan nås på <a href="mailto:j.d.enstad@samfunnsforskning.no" class="email">j.d.enstad@samfunnsforskning.no</a>.</p>
 <hr>
-<p><em>Analysene ble gjennomført i R version 4.4.1 (2024-06-14 ucrt). Dokument generert 2025-08-28.</em></p>
+<p><em>Analysene ble gjennomført i R version 4.4.1 (2024-06-14 ucrt). Dokument generert 2025-08-29.</em></p>
 
 
 <!-- -->
@@ -893,14 +894,29 @@ Tabell&nbsp;2: Styrken på sammenhengen mellom antisemittiske fordommer og Israe
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referanser</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-hoffmannAttitudesJewsMuslims2017" class="csl-entry" role="listitem">
-Hoffmann, Christhard, og Vibeke Moe, red. 2017. <em>Attitudes Towards <span>Jews</span> and <span>Muslims</span> in <span>Norway</span>, 2017: <span>Population</span> Survey and Minority Study</em>. Oslo: <span>Center for Studies of the Holocaust and Religious Minorities</span>.
+<div id="ref-cohenModernAntiSemitismAntiIsraeli2009" class="csl-entry" role="listitem">
+Cohen, Florette, Lee Jussim, Kent D. Harber, og Gautam Bhasin. 2009. <span>«Modern Anti-<span>Semitism</span> and Anti-<span>Israeli</span> Attitudes»</span>. <em>Journal of Personality and Social Psychology</em> 97 (2): 290–306. <a href="https://doi.org/10.1037/a0015338">https://doi.org/10.1037/a0015338</a>.
+</div>
+<div id="ref-cohen-abadyModernAntisemitismIsrael2016" class="csl-entry" role="listitem">
+Cohen-Abady, Florette, Daniel Kaplin, Lee Jussim, og Rachel Rubinstein. 2016. <span>«The <span>Modern Antisemitism</span>–<span>Israel Model</span> (<span>MASIM</span>): <span>Empirical Studies</span> of <span>North American Antisemitism</span>»</span>. I <em>Antisemitism in <span>North America</span></em>, redigert av Steven K. Baum, Neil J. Kressel, Florette Cohen, og Steven Leonard Jacobs, 94–118. Brill. <a href="https://doi.org/10.1163/9789004307148_007">https://doi.org/10.1163/9789004307148_007</a>.
+</div>
+<div id="ref-enstadFacingAntisemitismEurope2024" class="csl-entry" role="listitem">
+Enstad, Johannes Due. 2024. <span>«Facing Antisemitism in <span>Europe</span>: Individual and Country-Level Predictors of <span>Jews</span>’ Victimization and Fear across Twelve Countries»</span>. <em>Social Forces</em>, juni, soae091. <a href="https://doi.org/10.1093/sf/soae091">https://doi.org/10.1093/sf/soae091</a>.
+</div>
+<div id="ref-hirshContemporaryLeftAntisemitism2018" class="csl-entry" role="listitem">
+Hirsh, David. 2018. <em>Contemporary Left Antisemitism</em>. London; New York: Routledge.
+</div>
+<div id="ref-Hoffmann2024Attitudes" class="csl-entry" role="listitem">
+Hoffmann, Christhard. 2024. <span>«Attitudes <span>Towards Jews</span> and <span>Muslims</span> in <span>Norway</span>, 2011 and 2017»</span>. <span>Sikt - Norwegian Agency for Shared Services in Education and Research</span>. <a href="https://doi.org/10.18712/NSD-NSD2879-V3">https://doi.org/10.18712/NSD-NSD2879-V3</a>.
 </div>
 <div id="ref-lovakovEmpiricallyDerivedGuidelines2021" class="csl-entry" role="listitem">
 Lovakov, Andrey, og Elena R. Agadullina. 2021. <span>«Empirically Derived Guidelines for Effect Size Interpretation in Social Psychology»</span>. <em>European Journal of Social Psychology</em> 51 (3): 485–504. <a href="https://doi.org/10.1002/ejsp.2752">https://doi.org/10.1002/ejsp.2752</a>.
 </div>
-<div id="ref-moeAttitudesJewsMuslims2023" class="csl-entry" role="listitem">
-Moe, Vibeke. 2023. <span>«Attitudes Towards <span>Jews</span> and <span>Muslims</span> in <span>Norway</span> 2022»</span>. Oslo: <span>Center for Holocaust and Minority Studies</span>.
+<div id="ref-Moe2024Attitudes" class="csl-entry" role="listitem">
+Moe, Vibeke, Cora Alexa Døving, Birgitte P. Haanshuus, Christhard Hoffmann, Claudia Lenz, Werner Bergmann, Ottar Hellevik, Anders Ravik Jupskås, Irene Levin, og Øyvind B. Solheim. 2024. <span>«Attitudes towards <span>Jews</span> and <span>Muslims</span> in <span>Norway</span>, 2022: <span>Population</span> Survey, Minority Survey and Youth Study»</span>. <span>Sikt - Norwegian Agency for Shared Services in Education and Research</span>. <a href="https://doi.org/10.18712/NSD-NSD3151-V1">https://doi.org/10.18712/NSD-NSD3151-V1</a>.
+</div>
+<div id="ref-staetskyLeftRightChristians2020" class="csl-entry" role="listitem">
+Staetsky, L. Daniel. 2020. <span>«The <span>Left</span>, the <span>Right</span>, <span>Christians</span>, <span>Muslims</span> and <span>Detractors</span> of <span>Israel</span>: <span>Who</span> Is <span>Antisemitic</span> in <span>Great Britain</span> in the <span>Early</span> 21st <span>Century</span>?»</span> <em>Contemporary Jewry</em> 40 (2): 259–92. <a href="https://doi.org/10.1007/s12397-020-09335-1">https://doi.org/10.1007/s12397-020-09335-1</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1372,8 +1388,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Kildekode</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hvordan henger Israel-fiendtlige og jødefiendtlige holdninger sammen?"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Analyser av data fra HL-senterets holdningsundersøkelser fra 2017 og 2022"</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Henger Israel-fiendtlige og jødefiendtlige holdninger sammen?"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "Et analysenotat basert på data fra HL-senterets holdningsundersøkelser fra 2017 og 2022"</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: "Johannes Due Enstad"</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: </span></span>
@@ -1409,11 +1425,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="fu"># Innledning</span></span>
 <span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Formålet med dette lille notatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen, med åpne data og tilgjengelig kildekode for å reprodusere analysene.</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>Spørsmålet om forholdet mellom Israel-fiendtlighet og jødefiendtlighet diskuteres stadig i offentligheten. Noen hevder at antisemittitiske forestillinger er sammenfiltret med fiendtlighet mot Israel, mens andre betviler en slik sammenheng. Ettersom jeg har ledet et <span class="co">[</span><span class="ot">forskningsprosjekt</span><span class="co">](https://johannesdue.github.io/chaceweb/)</span> om antisemittisme i Europa, har jeg noe å si om temaet. Jeg har skrevet om saken blant annet <span class="co">[</span><span class="ot">her</span><span class="co">](https://www.vg.no/nyheter/i/3E8xrP/den-nye-antisemittismen)</span>, <span class="co">[</span><span class="ot">her</span><span class="co">](https://johannesdue.github.io/chaceweb/assets/enstad_kk_20240507.pdf)</span> og <span class="co">[</span><span class="ot">her</span><span class="co">](https://samfunnsforskning.brage.unit.no/samfunnsforskning-xmlui/bitstream/handle/11250/3176040/enstad_det_eldste_hatet_Agora_1-2_2024_.pdf?sequence=4&amp;isAllowed=y)</span>. Formålet med dette lille analysenotatet er å gi et empirisk kunnskapsgrunnlag for diskusjonen.</span>
 <span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) <span class="co">[</span><span class="ot">@hoffmannAttitudesJewsMuslims2017; @moeAttitudesJewsMuslims2023</span><span class="co">]</span>. Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>I det følgende presenteres en serie enkle, bivariate analyser som undersøker sammenhengen mellom Israel-fiendtlige og antisemittiske holdninger i Norge. Datagrunnlaget er to nasjonalt representative spørreundersøkelser gjennomført av HL-senteret i 2017 (N = 1575) og 2022 (N = 1653) <span class="co">[</span><span class="ot">@Hoffmann2024Attitudes; @Moe2024Attitudes</span><span class="co">]</span>. (HL-senteret gjennomførte en ny undersøkelse i 2024, men disse dataene er i skrivende stund ikke tilgjengeliggjort.) Resultatene viser at personer som støtter Israel-fiendtlige påstander, gir uttrykk for antisemittiske holdninger i betydelig sterkere grad enn andre.</span>
 <span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>Dataene som brukes i disse analysene er tilgjengelige via Sikt:</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>Datagrunnlaget for analysene er tilgjengelig via Sikt:</span>
 <span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>2017-data: <span class="ot">&lt;https://doi.org/10.18712/NSD-NSD2879-V3&gt;</span></span>
 <span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>2022-data: <span class="ot">&lt;https://doi.org/10.18712/NSD-NSD3151-V1&gt;</span></span>
@@ -1492,7 +1508,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>Begge påstandene har fem svaralternativer: "Stemmer ikke i det hele tatt", "Stemmer nokså dårlig", "Stemmer nokså godt", "Stemmer helt", eller "Umulig å svare".</span>
 <span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som over. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</span>
 <span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a>Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.</span>
 <span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a></span>
@@ -1613,7 +1629,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-240"><a href="#cb7-240" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-241"><a href="#cb7-241" aria-hidden="true" tabindex="-1"></a><span class="fu">## Effektstørrelser</span></span>
 <span id="cb7-242"><a href="#cb7-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-243"><a href="#cb7-243" aria-hidden="true" tabindex="-1"></a>Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer *forårsaker* Israel-fiendtlighet eller vice versa. Det er likevel nyttig å beregne styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?</span>
+<span id="cb7-243"><a href="#cb7-243" aria-hidden="true" tabindex="-1"></a>Analysene som presenteres her, kan ikke slå fast at antisemittiske fordommer *forårsaker* Israel-fiendtlighet eller vice versa. Det er likevel nyttig å vurdere styrken på den sammenhengen vi kan observere i dataene, eller effektstørrelsen. Er det en svak, moderat, eller sterk sammenheng?</span>
 <span id="cb7-244"><a href="#cb7-244" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-245"><a href="#cb7-245" aria-hidden="true" tabindex="-1"></a><span class="in">```{r resultater}</span></span>
 <span id="cb7-246"><a href="#cb7-246" aria-hidden="true" tabindex="-1"></a><span class="in">#| label: tbl-2</span></span>
@@ -1723,7 +1739,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-350"><a href="#cb7-350" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-351"><a href="#cb7-351" aria-hidden="true" tabindex="-1"></a><span class="fu">### Cohen's *d*</span></span>
 <span id="cb7-352"><a href="#cb7-352" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-353"><a href="#cb7-353" aria-hidden="true" tabindex="-1"></a>Cohen's *d* ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at *d* = 0.65 regnes som en "stor" effekt i sosialpsykologi <span class="co">[</span><span class="ot">@lovakovEmpiricallyDerivedGuidelines2021</span><span class="co">]</span>, kan vi slutte at dette er sterke sammenhenger.</span>
+<span id="cb7-353"><a href="#cb7-353" aria-hidden="true" tabindex="-1"></a>Cohen's *d* ligger mellom 0.66 og 0.80 for de Israel-fiendtlige påstandene og for begge år. Dette betyr at enighet med påstandene er forbundet med en forhøyet skåre på antisemittismeskalaen som tilsvarer mellom 66% og 80% av et standardavvik. Gitt at *d* = 0.65 regnes som en "stor" effekt i sosialpsykologi <span class="co">[</span><span class="ot">@lovakovEmpiricallyDerivedGuidelines2021</span><span class="co">]</span>, er det rimelig å beskrive de observerte sammenhengene som sterke.</span>
 <span id="cb7-354"><a href="#cb7-354" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-355"><a href="#cb7-355" aria-hidden="true" tabindex="-1"></a><span class="fu"># Diskusjon</span></span>
 <span id="cb7-356"><a href="#cb7-356" aria-hidden="true" tabindex="-1"></a></span>
@@ -1731,13 +1747,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-358"><a href="#cb7-358" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-359"><a href="#cb7-359" aria-hidden="true" tabindex="-1"></a>Dette betyr ikke at de som er kritiske til eller fiendtlige mot Israel, nødvendigvis har antisemittiske holdninger, men at det er betydelig større sannsynlighet for å finne antisemittiske holdninger hos Israel-fiendtlige personer.</span>
 <span id="cb7-360"><a href="#cb7-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-361"><a href="#cb7-361" aria-hidden="true" tabindex="-1"></a>Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå begge veier. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.</span>
+<span id="cb7-361"><a href="#cb7-361" aria-hidden="true" tabindex="-1"></a>Mønstrene som påvises her, sier ikke noe om årsakssammenhenger. Det er plausibelt at en eventuell årsakssammenheng kan gå i begge retninger. For noen kan fiendtlige holdninger til Israel gi grobunn for jødefiendtlighet; for andre kan eksisterende antijødiske holdinger være det som foranlediger fiendtlighet mot Israel. Videre kan andre faktorer, som utdannelse og kunnskap, generell utgruppefiendtlighet eller ideologisk/religiøs overbevisning, ligge bak og virke sammen på ulike måter for å produsere eller begrense både antijødiske og antiisraelske holdninger. Slike faktorer er ikke tatt høyde for i disse analysene, ettersom hensikten simpelthen har vært å undersøke sammenhengen mellom de to typene av holdninger.</span>
 <span id="cb7-362"><a href="#cb7-362" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-363"><a href="#cb7-363" aria-hidden="true" tabindex="-1"></a>Kommentarer eller spørsmål knyttet til disse analysene er velkomne, og jeg kan nås på <span class="ot">&lt;j.d.enstad@samfunnsforskning.no&gt;</span>.</span>
+<span id="cb7-363"><a href="#cb7-363" aria-hidden="true" tabindex="-1"></a>En rekke eksisterende forskningsstudier har funnet liknende sammenhenger mellom Israel-fiendtlighet og antisemittisme med data fra andre land, også etter å ha kontrollert for andre relevante faktorer <span class="co">[</span><span class="ot">@cohenModernAntiSemitismAntiIsraeli2009; @cohen-abadyModernAntisemitismIsrael2016; @enstadFacingAntisemitismEurope2024; @hirshContemporaryLeftAntisemitism2018; @staetskyLeftRightChristians2020</span><span class="co">]</span>. I en nylig publisert studie basert på data fra 12 EU-land, fant jeg at utbredelsen av negative syn på Israel var sterkt forbundet med jøders utsatthet for antisemittisk vold og trakassering---mens utbredelsen av eksplisitte antisemittiske fordommer *ikke* hadde noen slik effekt. Dette kan etter mitt syn tyde på at antisemittisk fiendtlighet er mer utbredt i befolkningen enn det man kan måle ved hjelp av tradisjonelle antijødiske påstander, og at sterk antipati mot Israel, som er mer sosialt akseptabelt, i mange tilfeller (men ikke alltid eller for alle) fungerer som et mer eller mindre subtilt uttrykk for underliggende antijødisk sentiment. I en annen studie, som i skrivende stund er under fagfellevurdering (se <span class="co">[</span><span class="ot">preprint</span><span class="co">](https://osf.io/preprints/psyarxiv/8ursn_v1)</span>), finner jeg, basert på HL-senterets egne data, en sterk sammenheng mellom Israel-fiendtlige holdninger og rettferdiggjøring av vold og trakassering mot jøder.</span>
 <span id="cb7-364"><a href="#cb7-364" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-365"><a href="#cb7-365" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb7-365"><a href="#cb7-365" aria-hidden="true" tabindex="-1"></a>Kommentarer eller spørsmål knyttet til disse analysene er velkomne, og jeg kan nås på <span class="ot">&lt;j.d.enstad@samfunnsforskning.no&gt;</span>.</span>
 <span id="cb7-366"><a href="#cb7-366" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-367"><a href="#cb7-367" aria-hidden="true" tabindex="-1"></a>*Analysene ble gjennomført i `r R.version.string`. Dokument generert `r Sys.Date()`.*</span></code><button title="Kopier til utklipstavle" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb7-367"><a href="#cb7-367" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb7-368"><a href="#cb7-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-369"><a href="#cb7-369" aria-hidden="true" tabindex="-1"></a>*Analysene ble gjennomført i `r R.version.string`. Dokument generert `r Sys.Date()`.*</span></code><button title="Kopier til utklipstavle" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
