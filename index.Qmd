@@ -119,7 +119,7 @@ df2 <- cbind(df2, prejudice_items_2022)
 
 Begge påstandene har fem svaralternativer: "Stemmer ikke i det hele tatt", "Stemmer nokså dårlig", "Stemmer nokså godt", "Stemmer helt", eller "Umulig å svare".
 
-**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.
+**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4. Skalaen har høy indre konsistens, som betyr at påstandene "trekker i samme retning" (Cronbach's $\alpha$ = .94).
 
 Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.
 

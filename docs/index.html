@@ -125,6 +125,35 @@ div.csl-indent {
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -187,7 +216,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Utgitt</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">29. august 2025</p>
+      <p class="date">31. august 2025</p>
     </div>
   </div>
   
@@ -280,7 +309,7 @@ div.csl-indent {
 <li>“Så lenge staten Israel finnes, kan det ikke bli fred.”</li>
 </ol>
 <p>Begge påstandene har fem svaralternativer: “Stemmer ikke i det hele tatt”, “Stemmer nokså dårlig”, “Stemmer nokså godt”, “Stemmer helt”, eller “Umulig å svare”.</p>
-<p><strong>Antisemittiske fordommer:</strong> Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: “Jøder har selv mye av skylden for at de er blitt forfulgt”). Svaralternativene er som ovenfor. For å konstruere skalaen, blir “Umulig å svare” sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</p>
+<p><strong>Antisemittiske fordommer:</strong> Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: “Jøder har selv mye av skylden for at de er blitt forfulgt”). Svaralternativene er som ovenfor. For å konstruere skalaen, blir “Umulig å svare” sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4. Skalaen har høy indre konsistens, som betyr at påstandene “trekker i samme retning” (Cronbach’s <span class="math inline">\(\alpha\)</span> = .94).</p>
 <p>Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.</p>
 <div class="cell">
 <details class="code-fold">
@@ -885,7 +914,7 @@ Tabell&nbsp;2: Styrken på sammenhengen mellom antisemittiske fordommer og Israe
 <p>En rekke eksisterende forskningsstudier har funnet liknende sammenhenger mellom Israel-fiendtlighet og antisemittisme med data fra andre land, også etter å ha kontrollert for andre relevante faktorer <span class="citation" data-cites="cohenModernAntiSemitismAntiIsraeli2009 cohen-abadyModernAntisemitismIsrael2016 enstadFacingAntisemitismEurope2024 hirshContemporaryLeftAntisemitism2018 staetskyLeftRightChristians2020">(<a href="#ref-cohenModernAntiSemitismAntiIsraeli2009" role="doc-biblioref">Cohen mfl. 2009</a>; <a href="#ref-cohen-abadyModernAntisemitismIsrael2016" role="doc-biblioref">Cohen-Abady mfl. 2016</a>; <a href="#ref-enstadFacingAntisemitismEurope2024" role="doc-biblioref">Enstad 2024</a>; <a href="#ref-hirshContemporaryLeftAntisemitism2018" role="doc-biblioref">Hirsh 2018</a>; <a href="#ref-staetskyLeftRightChristians2020" role="doc-biblioref">Staetsky 2020</a>)</span>. I en <a href="https://academic.oup.com/sf/article/103/3/1186/7701118">nylig publisert studie</a> basert på data fra 12 EU-land, fant jeg at utbredelsen av negative syn på Israel var sterkt forbundet med jøders utsatthet for antisemittisk vold og trakassering—mens utbredelsen av eksplisitte antisemittiske fordommer <em>ikke</em> hadde noen slik effekt. Dette kan etter mitt syn tyde på at antisemittisk fiendtlighet er mer utbredt i befolkningen enn det man kan måle ved hjelp av tradisjonelle antijødiske påstander, og at sterk antipati mot Israel, som er mer sosialt akseptabelt, i mange tilfeller (men ikke alltid eller for alle) fungerer som et mer eller mindre subtilt uttrykk for underliggende antijødisk sentiment. I en annen studie, som i skrivende stund er under fagfellevurdering (se <a href="https://osf.io/preprints/psyarxiv/8ursn_v1">preprint</a>), finner jeg, basert på norske data, en sterk sammenheng mellom Israel-fiendtlige holdninger og rettferdiggjøring av vold og trakassering mot jøder.</p>
 <p>Kommentarer eller spørsmål knyttet til disse analysene er velkomne, og jeg kan nås på <a href="mailto:j.d.enstad@samfunnsforskning.no" class="email">j.d.enstad@samfunnsforskning.no</a>.</p>
 <hr>
-<p><em>Analysene ble gjennomført i R version 4.4.1 (2024-06-14 ucrt). Dokument generert 2025-08-29.</em></p>
+<p><em>Analysene ble gjennomført i R version 4.4.1 (2024-06-14 ucrt). Dokument generert 2025-08-31.</em></p>
 
 
 <!-- -->
@@ -1508,7 +1537,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>Begge påstandene har fem svaralternativer: "Stemmer ikke i det hele tatt", "Stemmer nokså dårlig", "Stemmer nokså godt", "Stemmer helt", eller "Umulig å svare".</span>
 <span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4.</span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>**Antisemittiske fordommer:** Her anvendes en skala konstruert på basis av seks påstander som måler tradisjonelle antijødiske fordommer (for eksempel: "Jøder har selv mye av skylden for at de er blitt forfulgt"). Svaralternativene er som ovenfor. For å konstruere skalaen, blir "Umulig å svare" sjaltet ut før snittet av svarene på de seks påstandene beregnes, hvilket resulterer i en skala fra 1 til 4. Skalaen har høy indre konsistens, som betyr at påstandene "trekker i samme retning" (Cronbach's $\alpha$ = .94).</span>
 <span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a>Spørreundersøkelsene inneholder også påstander som måler sympati/antipati og sosial avstand. Disse er ikke anvendt her.</span>
 <span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a></span>
